@@ -1,16 +1,24 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OilBaseComponent } from './oil/oil-base/oil-base.component';
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OilBaseComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgApexchartsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
